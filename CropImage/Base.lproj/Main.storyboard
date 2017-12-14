@@ -59,9 +59,25 @@
                     <view key="view" contentMode="scaleToFill" id="Ppl-Ch-LsD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SIc-q2-3U7">
+                                <rect key="frame" x="20" y="166" width="335" height="335"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SIc-q2-3U7" secondAttribute="height" multiplier="1:1" id="hB1-V3-JWF"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ShQ-qi-y6x" firstAttribute="trailing" secondItem="SIc-q2-3U7" secondAttribute="trailing" constant="20" id="Ryb-a7-Kpz"/>
+                            <constraint firstItem="SIc-q2-3U7" firstAttribute="leading" secondItem="ShQ-qi-y6x" secondAttribute="leading" constant="20" id="a3D-8U-YOQ"/>
+                            <constraint firstItem="SIc-q2-3U7" firstAttribute="centerY" secondItem="Ppl-Ch-LsD" secondAttribute="centerY" id="fln-7T-QN3"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ShQ-qi-y6x"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="SIc-q2-3U7" id="y7H-rU-mS0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nPx-2j-wwh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
